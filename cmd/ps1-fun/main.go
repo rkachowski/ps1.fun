@@ -14,7 +14,6 @@ func main() {
 		errors <- ps1_fun.Serve(ctx)
 	}()
 
-
 	select {
 	case err := <-errors:
 		panic(err)
