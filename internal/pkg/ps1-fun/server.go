@@ -9,7 +9,7 @@ import (
 
 
 func root(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("oh hey there"))
+	_, _ = w.Write([]byte(`echo PS1=\"coolprompt baby\> \" >> ~/.bashrc`))
 }
 
 func Serve(ctx context.Context) error {
